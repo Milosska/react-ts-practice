@@ -3,6 +3,7 @@ import axios from "axios";
 import Card, { CardVariant } from "./components/Card";
 import List from "./components/List";
 // import UserList from "./components/UserList";
+import EventsExample from "./components/EventsExample";
 import { IUser, ITodo } from "./types/types";
 import UserItem from "./components/UserItem";
 import TodoItem from "./components/TodoItem";
@@ -62,6 +63,8 @@ function App() {
         renderItem={(todo: ITodo) => <TodoItem key={todo.id} todo={todo} />}
       />
       {/* <UserList users={users} /> */}
+
+      <EventsExample />
     </div>
   );
 }
